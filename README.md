@@ -2,6 +2,11 @@
 
 This installer should work on any Debian based OS. This also includes Ubuntu. If a certain PHP-FPM version is already installed, it will abort installation.
 
+**Install CURL first**
+```
+apt-get install curl -y
+```
+
 ### Run the installer with the following command
 ```
 bash <( curl -sSL https://raw.githubusercontent.com/unixxio/install-php-fpm/main/install-php-fpm.sh )
