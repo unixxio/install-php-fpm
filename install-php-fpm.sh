@@ -75,6 +75,7 @@ binary="/usr/sbin/php-fpm${php_version}"
 if [[ -f "${binary}" ]]; then
     # Show warning if version is already installed
     echo -e "\nThis version (php-fpm${php_version}) is already installed. Nothing to do here :-)\n"
+    exit 1
 else
     echo -e "\nInstalling required packages and PHP-FPM. Please wait...\n"
     # Update packages
