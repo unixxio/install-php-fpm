@@ -21,7 +21,7 @@ my_username="$(whoami)"
 user_ip="$(who am i --ips | awk '{print $5}' | sed 's/[()]//g')"
 user_hostname="$(host ${user_ip} | awk '{print $5}' | sed 's/.$//')"
 
-packages="wget tee lsb-release ca-certificates apt-transport-https"
+packages="gnupg2 wget lsb-release ca-certificates apt-transport-https"
 
 # Check if script is run as root
 if [[ $EUID -ne 0 ]]; then
