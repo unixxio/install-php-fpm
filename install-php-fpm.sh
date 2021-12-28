@@ -44,7 +44,7 @@ echo -e "\nPlease choose a PHP-FPM version to install.\n"
 
 PS="$(echo -e "\nOption : ")"
 PS3=${PS}
-options=("7.2" "7.3" "7.4" "8.0" "Quit")
+options=("7.2" "7.3" "7.4" "8.0" "8.1 "Quit")
 select php_version in "${options[@]}"
 do
     case ${php_version} in
@@ -58,6 +58,9 @@ do
             break
             ;;
         "8.0")
+            break
+            ;;
+        "8.1")
             break
             ;;
         "Quit")
